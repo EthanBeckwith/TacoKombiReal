@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0%;
+}
+header {
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    margin: 0px;
+    height: 90px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 70%;
+    margin-top: 95px;
+    height: 50px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 60px;
+    border: 2px solid white;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 999;
+}
+html {
+  overflow-y: scroll;
+}
+.titel{
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 160px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color: white;
+   
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+a:hover{
+    color: rgb(247, 47, 47);
+    transition: 1s;
+}
+main{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+}
+.box{
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    width: 230px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding-top: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+
+}
+.name{
+     font-size: 30px;
+    
+    margin-bottom: 20px;
+}
+.foods{
+    height: 130px;
+    border-radius: 30px;
+    
+    
+}
+.about{
+    font-family: Tahoma, sans-serif;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 120px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* Desktop (default) */
+@media (min-width: 1025px) {
+
+
+
+    .menu{
+        width: 50%;
+        margin-left: 15%;
+    }
+    main{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .box{
+    background-color: rgb(20, 20, 20);
+    border-radius: 15px;
+    width: 400px;
+    height: 550px;
+}
+.name{
+font-size: 40px;
+}
+.foods{
+height: 200px;
+    
+}
+.about{
+font-size:25px;
+}
+.card{
+    height: 160px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+}
+
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    header {
+        width: 195;
+        min-width: 0;
+        left: 0;
+        right: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        height: 70px;
+    }
+    
+    header img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .menu{
+        width: 70%;
+        top: -20px;
+        margin-left: 5%;
+          margin-right: 5%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+           margin-left: 2%;
+          margin-right: 2%;
+        justify-content: center;
+        align-items: start;
+    }
+    .box {
+        width: 100%;
+        max-width: none;
+        height: 400px;
+        margin-bottom: 0;
+    }
+    .name{
+font-size: 22px;
+}
+.foods{
+height: 100px;
+    
+}
+.about{
+font-size:17px;
+}
+    
+}
